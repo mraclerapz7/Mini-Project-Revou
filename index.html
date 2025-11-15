@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="todo-container">
+    <center><h2>To Do List Rafka</h2></center>
+    <div class="input-row">
+        <input type="text" id="todo-input" placeholder="Add a to do...">
+        <input type="date" id="todo-date">
+        <button id="add-btn">Add</button>
+    </div>
+
+    <div class="filter-delete-row">
+        <button id="filter-btn" class="btn-filter">Filter</button>
+        <button id="delete-all-btn" class="btn-delete-all">Delete All</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>TASK</th>
+                <th>DUE DATE</th>
+                <th>STATUS</th>
+                <th>ACTIONS</th>
+            </tr>
+        </thead>
+        <tbody id="todo-table">
+            <tr>
+                <td colspan="4" class="kosong">No task found</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
